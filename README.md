@@ -16,3 +16,6 @@ Personal notes
 - Recording; make sure it's connected to GitHub, constantly update and screenshots, make notes of how certain steps are done
 - Troubleshooting and documenting; could also do scenario based
   (eg. creating ticket and/or document the problem, symptoms,solution(s))
+
+Helpful links:
+https://blog.davidvarghese.net/posts/building-home-lab-part-1/
