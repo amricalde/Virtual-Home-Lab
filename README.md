@@ -19,5 +19,4 @@ Personal notes
 <br>
 
 Helpful links:
-<br>https://blog.davidvarghese.net/posts/building-home-lab-part-1/
 <br>https://osintteam.blog/my-virtual-homelab-introduction-caa2f34c73c3
