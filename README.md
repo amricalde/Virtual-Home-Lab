@@ -10,6 +10,7 @@ Environment:
 - 16GB RAM host machine
 
 Phases:
+-
 1. Virtual environment setup
 2. Domain controller deployment
 3. Active directory structure
