@@ -1,9 +1,8 @@
 Phase 1 Virtual Environment Setup
 -
-I started by preparing the environment I will work at. Since Active Directory and client connection are the main focus, I
-used VMware Workstation Pro 17 as the machine that will run Windows Server 2022 and Windows 10 for a client machine as previously mentioned.
+The first phase focuses on preparing the virtual environment used throughout the entire lab. Since the objective of this project is to simulate a small Active Directory environment, VMWare Workstation Pro 17 was used to host these virtual machines.
 
-Three main points for this section:
+Four main points for this section:
 - Download VMware application ✅
 - Download Windows Server ISO ✅
 - Create a new VM
