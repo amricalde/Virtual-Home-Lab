@@ -4,7 +4,7 @@ I started by preparing the environment I will work at. Since Active Directory an
 used VMware Workstation Pro 17 as the machine that will run Windows Server 2022 and Windows 10 for a client machine as previously mentioned.
 
 Three main points for this section:
-- Download VMware application
+- Download VMware application ✅
 - Download Windows Server ISO
 - Installing Windows Server on VM
 
