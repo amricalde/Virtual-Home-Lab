@@ -10,7 +10,7 @@ Four main points for this section:
 
 **Downloading VMWAre Workstation Pro 17**
 - Ensure virtualization is enabled on your PC by checking task manager.
-![alt text](https://github.com/amricalde/Virtual-Home-Lab/blob/main/p1s1.jpg?raw=true)
+![alt text](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p1s1.jpg?raw=true)
   _note: to enable virtualization on your PC, go to BIOS > search "SVM mode" and enable it from there._
 - Download the latest version, I used [broadcom.com](https://support.broadcom.com/web/ecx/home#.) to install it for free. More steps could be found [here](https://osintteam.blog/my-virtual-homelab-introduction-caa2f34c73c3) if needed
 <br>
