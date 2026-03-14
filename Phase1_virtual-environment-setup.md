@@ -24,5 +24,8 @@ Once the download is done, I created a new VM to startup the process.
 **Creating a new virtual machine**
 - Open application currently installed
 - Create a new virtual machine > typical > I will install the os later > Microsoft Windows, Windows Server 2022 > deafult >
-  Max disk size: 20GB > finish
+  Max disk size: 20GB, Split virtual disk into multiple files > finish <br>
+  
+After clicking finish, VMWAre loads the new machine with the specifications applied and it looked like this.
+![VMWare-screen](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p1s7.jpg?raw=true)
 
