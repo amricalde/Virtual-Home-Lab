@@ -35,7 +35,6 @@ After clicking finish, VMwAre loads the new machine with the specifications appl
 
 **Installing Windows Server on VM**
 - Head to the virtual machine settings by right clicking on the VM name.
-  ![VM-settings](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p1s8.jpg?raw=true)
 - Settings > Hardware > CD/DVD (SATA) > Use ISO image file > browse > downloads > SERVER_EVAL_x64FRE_en-us.iso > open > OK
   ![VM-iso-download](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p1s9.jpg?raw=true)
 <br>
@@ -47,13 +46,10 @@ Et voila! It's now ready. Power on the virtual machine. While it is loading, con
 - Select the Windows Server 2022 Standard Evaluation (Desktop Experience). The first option only has the command line interface and the second one that is selected, provides the graphical user interface. <br>
   ![OS-setup-gui](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p1s11.jpg?raw=true) <br>
 - Accept the terms > Next > Custom: Install Microsoft Server Operating System only (advanced) > Next
-  ![OS-allocated-space](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p1s12.jpg?raw=true)
 - After loading, it will prompt to Customize settings, creating username and password. <br>
-  ![OS-customize-settings](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p1s13.jpg?raw=true) <br>
   Username: Administrator <br>
-  Password: <!-- Admin43*@ <br> -->
+  Password: ******* <!-- Admin43*@ <br> -->
 - Once the steps above are complete, AD tools are ready to be downloaded.
-  ![Windows-start-window](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p1s14.jpg?raw=true)
 
 <!--
 Helpful commands
