@@ -9,4 +9,5 @@ What i did today(3/15/26):
   -(then added static ip) - red gone!
 - went back Server Manager > AD DS > Under Servers, it would show a yellow warning sign, indicating to promote DC
 - promoted to DC
+  - followed steps, created AD domain: AMR.local
 -->
