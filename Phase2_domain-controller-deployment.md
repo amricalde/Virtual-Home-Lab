@@ -17,13 +17,27 @@ Three main points for this section:
   After that installing, you are prompted to promote the server as a domain controller
   ![notif-dc](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p2s6.jpg?raw=true)
 
-<!--
-**Prerequisites Check; troubleshooting "The TCP/IP networkig protocol must be properly configured..."**
-Unfortunately after trying to promote it to DC, I ran into an error
+<br>
+
+**Prerequisites Check; troubleshooting**
+- Unfortunately after trying to promote it to DC, I ran into an error and failed the prerequisites check.
+  ![troubleshooting-TCP/IP](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p2s7.jpg?raw=true)
+- <mark> "The TCP/IP networking protocol must be properly configured..."</mark> indicates that the server's network needs to be reconfigured to     meet the requirements for DC promotion. To properly promote a server into a DC, it must have a static IP and a DNS that points to itself or to   another DC.
+- What I did:
+  - checked network connection; there was a red icon and said "Network cable unplugged".
+  - changed the IPv4 configuration to static and filled in the appropriate IP address and DNS and it still gave me the same output (red icon, network cable unplugged).
+  - I later realized that I did not properly configure my VM and forgot to add a network interface.
+  - changed NAT to host only to create private network between host computer and VM (this "plugs in" network cable virtually).
+  - added a network; host only needs a virtual network to exist and make the network adapter valid.
+    ![adding-VMnet1](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p2s9.jpg?raw=true)
+  - After that, I re-configured the static IP and DNS again and it worked.
+    ![IPv4-config](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p2s10.jpg?raw=true)
+
+<br>
 
 **Re-attempting to promote the server**
-after troubleshooting, i tried again and it was successful (show screenshot of login screen amr/administrator)
--->
+- After troubleshooting, I tried to promote the domain controller again and succesfully created an AD domain.
+  ![domain-successful](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p2s13.jpg?raw=true)
 
 <!-- 
 What i did today(3/15/26):
