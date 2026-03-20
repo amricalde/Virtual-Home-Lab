@@ -10,7 +10,13 @@ Notes as of 03/19/26:
   then restart
 - trying to restore defaults now on virtual network editor,wtf gave me vmnet 8 , nat, nat, dhcp enabled, 192.168.17.0 ???????
 - turned on vm anyways.. what the frick it worked??? LOL wthhh -- need to find out what happened, and what those commands mean
+notes:
+- error 1068
+-"could not connect ethernet 0"
+- media disconnected
+basically main issue was on host not being able to run vmware services because of host networking issue/it stopped working - which essentially broke the vmnet adapters, so vm had no connection, no IP
 okay,,,, moving on,,,,
+
 - now in aduc, up and running
 AMR.local
   |
