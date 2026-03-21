@@ -1,4 +1,49 @@
-<!-- 
+Phase 3 - Active Directory structure
+-
+Phase 3 focuses on designing and implementing the Active Directory structure for the enterprise environment. The structure consists of 2 main Organizational Units, YYZ and LGA, each representing separate locations. Within each of these are three nested OUs: Users, Computers, and Servers. These OUs are used to manage and organize objects such as user accounts, security groups, and distribution groups.
+
+<!--
+Here is a sketch of how the Active Directory looks like:
+(diagram) -->
+
+Four main points for this section:
+- Access Active Directory Users and Computers; troubleshooting "Naming information cannot be located..."
+- Create 2 top-level OUs to represent the different locations (YYZ and LGA)
+- Create nested OUs within each location (Users, Computers, Servers)
+- Add objects (users and groups) within the OUs
+
+<br>
+
+**Access Active Directory Users and Computers; troubleshooting**
+- When attempting to launch Active Directory Users and Computers, an error occured.<br>
+  ![Error-ADUC-failed-to-start](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p3s01.jpg?raw=true)
+- <mark>"Naming information cannot be located for the following reason: The server is not operational."</mark> suggests that the server is not functioning properly and cannot be used to acccess this tool.
+- This is what I tried to resolve the issue:
+    - checked network settings; network cable was unplugged once again.
+    - made sure the right configurations were set. Looked for any errors in IPv4 addressing and DNS, network adapter, and virtual network. editor, everything were set as they should be.
+    - tried to manually connect Ethernet 0 to VMnet1 as the VM was running, but was unsuccessful. I got this error instead. <br>
+      ![Ethernet0-VMnet1-connection-failed](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p3s05.jpg?raw=true)<br>
+    - <mark>"Could not connect to Ethernet0 to virtual network VMnet1"</mark> tells us that the server VM cannot connect to network adapter VMnet1 because something that is required to use it may be broken. Therefore, the issue lies on the VMware network on the host machine.
+    - ran a few commands on host machine:   
+      **_ipconfig_**: resulted in <mark>"Ethernet 0... Media disconnected"</mark>, confirms that VMware has no link to Ethernet 0. <br>
+      _Win + R > **ncpa.cpl**_: looked for VMware Network Adapter VMnet1. It was not there, VMware network is broken.<br>
+      _Win + R > **services.msc**_: opened serivces to if VMware DHCP Service and VMware NAT Service were running, as well as to restart.
+      ![vmware-nat-service](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p3s06.jpg?raw=true)
+    - ran into another error trying to reset the services. <mark>"Error 1068: The dependency service or group failed to start."</mark>
+    - this meant that I couldnt change anything, so I reset the Windows network stack to fix error 1068 using the following commands: <br>
+      **netsh winsock reset<br>
+      netsh int ip reset**
+    - restarted my computer, successfully reset both services.
+    - VMware DHCP/NAT service > properties > general > startup type: Automatic
+    - restored defaults on virtual network editor. <br>
+      ![virtual-network-editor-restore](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p3s07.jpg?raw=true)
+    - powered on VM and checked network connections, Ethernet0 is successfully connected again.
+    - Active Directory Users and Computers is now accesible. 
+    
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------
 Notes as of 03/19/26:
 - tried to run aduc but gave me that error (screenshot1)
 - Win + R > ncpa.cpl > look for VMware Network Adapter VMnet1 ;;was not there, VMware network broken
@@ -10,6 +55,7 @@ Notes as of 03/19/26:
   then restart
 - trying to restore defaults now on virtual network editor,wtf gave me vmnet 8 , nat, nat, dhcp enabled, 192.168.17.0 ???????
 - turned on vm anyways.. what the frick it worked??? LOL wthhh -- need to find out what happened, and what those commands mean
+
 notes:
 - error 1068
 -"could not connect ethernet 0"
@@ -30,7 +76,7 @@ AMR.local
     Computers (nested OU)
       |
       Computer01                                  -> not sure if i should keep for now
-    Services (nested OU)
+    Servers (nested OU)
   |
   LGA (OU)
     |
@@ -40,7 +86,7 @@ AMR.local
       IT; IT_LGA (group)
       DL-ITadmins; DL-ITadmins_LGA (group)
     Computers (nested OU)
-    Services (nested OU)
+    Servers (nested OU)
 
 "issues" encountered:
 - screenshot 10; cannot create object IT because name is already in use. Basically you cannot have the same group name under one domain.
