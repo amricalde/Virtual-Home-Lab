@@ -7,7 +7,7 @@ Here is a sketch of how the Active Directory looks like:
 (diagram) -->
 
 Four main points for this section:
-- Access Active Directory Users and Computers; troubleshooting "Naming information cannot be located..."
+- Access Active Directory Users and Computers; troubleshooting "Naming information cannot be located..." ✅
 - Create 2 top-level OUs to represent the different locations (YYZ and LGA)
 - Create nested OUs within each location (Users, Computers, Servers)
 - Add objects (users and groups) within the OUs
