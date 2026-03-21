@@ -29,7 +29,7 @@ Four main points for this section:
       _Win + R > **services.msc**_: opened serivces to if VMware DHCP Service and VMware NAT Service were running, as well as to restart.
       ![vmware-nat-service](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p3s06.jpg?raw=true)
     - ran into another error trying to reset the services. <mark>"Error 1068: The dependency service or group failed to start."</mark>
-    - this meant that I couldnt change anything, so I reset the Windows network stack to fix error 1068 using the following commands: <br>
+    - this meant that I could not change anything, so I reset the Windows network stack to fix error 1068 using the following commands: <br>
       **netsh winsock reset<br>
       netsh int ip reset**
     - restarted my computer, successfully reset both services.
