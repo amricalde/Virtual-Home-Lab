@@ -1,7 +1,7 @@
 # Virtual-Home-Lab (Windows Server Active Directory)
 This project simulates a small enterprise network environment using virtual machines. The environment consists of the following: <br>
 - Windows Server 2022 acting as the Domain Controller
-- Windows 10 acting as a client machine
+- Windows 11 acting as a client machine
 
 
 **Goals:**
