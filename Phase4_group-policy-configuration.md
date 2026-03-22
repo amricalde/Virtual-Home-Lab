@@ -22,6 +22,7 @@ Things I did as of 03/21/26:
   -   pwsd policy on client - shows what policy is implemented on that computer
  
 - next task:
+  - add wallpaper gpo
+  - documentation; separate phase 4 and 5 cus its all meshed here
   - add wifi to workstation
-  - documentation; separate phase 4 and 5 cus its all meshed here.
 -->
