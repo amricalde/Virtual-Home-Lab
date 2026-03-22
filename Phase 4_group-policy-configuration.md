@@ -1,6 +1,6 @@
 <!--
 Things I did as of 03/21/26:
-- download Windows 11 client         --> should add that on Phase 1?
+- download Windows 11 client         -> should add that on Phase 1?
 - created new vm for client, chose windows 11 pro
 - created new psw policy
 - created ashley.admin
@@ -23,4 +23,5 @@ Things I did as of 03/21/26:
  
 - next task:
   - add wifi to workstation
+  - documentation; separate phase 4 and 5 cus its all meshed here.
 -->
