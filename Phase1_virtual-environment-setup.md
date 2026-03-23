@@ -8,6 +8,7 @@ Five main points for this section:
 - Create a new VM ✅
 - Install Windows Server on VM ✅
 - Set up Windows Server ✅
+- Set up Windows 11 Client ✅
 
 **Downloading VMwAre Workstation Pro 17**
 - Ensure virtualization is enabled on your PC by checking task manager.
@@ -17,7 +18,7 @@ Five main points for this section:
 <br>
 
 **Downloading Windows Server 2022 ISO**
-- Windows installation link : [https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
+- Windows Server installation link : [https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
 - I chose the ISO downloads 64-bit edition
 
 Once the download is done, I created a new VM to startup the process.
@@ -50,6 +51,18 @@ Et voila! It's now ready. Power on the virtual machine. While it is loading, con
   Username: Administrator <br>
   Password: ******* <!-- Admin43*@ <br> -->
 - Once the steps above are complete, AD tools are ready to be downloaded.
+
+**Setting up Windows 11 Client**
+- the process is similar to the ones above.
+- Windows 11 installation link: [https://www.microsoft.com/en-ca/software-download/windows11](https://www.microsoft.com/en-ca/software-download/windows11)
+- went to "Download Windows 11 Disk Image (ISO) for x64 devices" and followed from there.
+- after downloading the ISO, create a new VM
+    - Typical > Installer disk image file: (find the w11 iso) > deafault > default > finish
+- notes:
+    - when it goes to the windows set up, select product key > Windows 11 Pro > custom
+    - choose "Set up device for work or school"
+    - for signing in go to sign in options > domain join instead > name: localadmin > security questions > turn off all privacy settings for device
+- once your client machine is all set up, it will be ready to use for Phase 4 and 5.
 
 <!--
 Helpful commands
