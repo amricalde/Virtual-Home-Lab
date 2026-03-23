@@ -7,6 +7,9 @@ Three main points for this section:
 - Join client to domain; troubleshooting "An Active Directory Domain Controller... AMR.local cannot be contacted"
 - Re-organize Active Directory objects
 
+**Creating admin account**
+- before jumping in to join the client to the domain, a domain admin account is created to manage and configure domain-joined systems.
+- this will be helpful in the next main point(s) of this phase and it is for best practice.
 
 <!--
 Things I did as of 03/21/26:
