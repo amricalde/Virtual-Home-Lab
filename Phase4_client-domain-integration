@@ -1,13 +1,6 @@
 <!--
 Things I did as of 03/21/26:
 
-Phase 5 - Group Policy configuration and implementation
-- created new psw policy (pswd length, expiry 90 days)
-  -  pswd policy > enforced
-  - gpudate /force; update the policies from its group policy management >> checked on clients side
-- created wallpaper policy
-
-
 Phase 4 - Client setup
 
 So i could sign in for client to setup domain
@@ -28,15 +21,8 @@ sidenote for phase 4
 - did some cleaning up/re-organize in aduc
 
 
-
   - screenshots:
   -   ip address of client and server
   -   members of domain admins
-  -   pswd policy settings
-  -   pwsd policy on client - shows what policy is implemented on that computer
- 
-- next task:
-  - add wallpaper gpo
-  - documentation; separate phase 4 and 5 cus its all meshed here
-  - add wifi to workstation
+
 -->
