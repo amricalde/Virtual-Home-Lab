@@ -21,9 +21,11 @@ So i could sign in for client to setup domain
 - added it as member of domain admins
 - logged on ashley.admin , disabled local administrator
 
-- joined client to domain > need more explanation, settings > system > about domain or workgroup > add to domain > sign in to admin
-  - pinged server from client to see if they were communnicating
-  - errors: it was not the right config. dns was wrong, ip of client was wrong, host-only for NAT on client VM
+- joined client to domain, settings > system > about domain or workgroup > add to domain > sign in to admin
+  - at first, it gave the error "an active directory controller cannot be contacted" so i
+  - pinged server from client to see if they were communnicating; they were not
+  - did ipconfig to check that the adress of the client was configured properly
+  - realized errors: it was not the right config. dns was wrong, ip of client was wrong, and forgot to do host-only for NAT on client VM
 - now that client is in the domain, i can sign as any user on the domain (can be ashley or KRISTI BOMBACLOT)
 - ashleymadison@AMR.local    UselessUser123#@!
 - moved Windowslicent from domain computers to yyz computers OU
