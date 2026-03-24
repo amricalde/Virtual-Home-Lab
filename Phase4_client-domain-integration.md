@@ -5,7 +5,7 @@ In Phase 4, the Windows Client was integrated into the Active Directory AMR.loca
 Three main points for this section:
 - Create admin account ✅
 - Join client to domain; troubleshooting "An Active Directory Domain Controller... AMR.local cannot be contacted" ✅
-- Re-organize Active Directory objects
+- Re-organize Active Directory objects ✅
 
 **Creating admin account** <br>
 Before jumping in to join the client to the domain, a domain admin account is created to manage and configure domain-joined systems. This will be helpful in the next main point(s) of this phase and it is for best practice.
