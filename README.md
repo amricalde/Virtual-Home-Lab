@@ -21,8 +21,8 @@ This project is currently being built and updated as I progress through the lab.
 **Phase 1** - Virtual environment setup ✅ <br>
 **Phase 2** - Domain controller deployment ✅ <br>
 **Phase 3** - Active directory structure ✅<br>
-**Phase 4** - Group policy configuration ✅<br>
-**Phase 5** - Client Domain integration <br>
+**Phase 4** - Client domain integration ✅<br>
+**Phase 5** - Group policy configuration <br>
 
 <br>  
 
