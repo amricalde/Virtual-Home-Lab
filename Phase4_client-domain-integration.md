@@ -27,6 +27,7 @@ Before jumping in to join the client to the domain, a domain admin account is cr
      - DNS was wrong, it must point to the server IP address
      - IP was not in the same subnet as the server
      - the client VM network adapter was not set to Host-only, the devices were not on the same network.
+    <!-- related to next phase: disabled second network adapter nat... needed it to download wallpaper, having nAT really confused the client computer to join domain or properly communicate to it.-->
 - after successful troubleshooting, the client machine is now in the domain and can sign as a user on the domain.
   ![domain-join-successful](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p4s01.jpg?raw=true)
 
