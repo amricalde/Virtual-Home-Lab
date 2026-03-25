@@ -21,8 +21,9 @@ Phase 5 - Group Policy configuration and implementation
   - downloaded background image
   - created file as shared folder, and appropriate permissions
   -created wallpaper policy 
-    User Config > Policies > Desktop > Desktop > Desktop Wallpaper > Enabled > Wallpaper Name: path_of_your_photo\wallpaper.jpg > Wallpaper style: Fill
+    - User Config > Policies > Desktop > Desktop > Desktop Wallpaper > Enabled > Wallpaper Name: path_of_your_photo\wallpaper.jpg > Wallpaper style: Fill
     - for the wallpaper name, use network path rather than local to keep it consistent throughout all computers. For centralized management, network sharing allows the wallpaper to be updated for the entire organization that is kept in one location. Having a shared folder also ensures that the wallpaper is accessible to all computers rather than locally where you have to manually set every computer in the domain.
+    - after creating, head to client to see changes.. restart machine if needed.
 
 rsop?
 
