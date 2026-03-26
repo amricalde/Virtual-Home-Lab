@@ -53,16 +53,16 @@ Et voila! It's now ready. Power on the virtual machine. While it is loading, con
 - Once the steps above are complete, AD tools are ready to be downloaded.
 
 **Setting up Windows 11 Client**
-- the process is similar to the ones above.
+- The process is similar to the ones above.
 - Windows 11 installation link: [https://www.microsoft.com/en-ca/software-download/windows11](https://www.microsoft.com/en-ca/software-download/windows11)
-- went to "Download Windows 11 Disk Image (ISO) for x64 devices" and followed from there.
-- after downloading the ISO, create a new VM
+- Went to "Download Windows 11 Disk Image (ISO) for x64 devices" and followed from there.
+- After downloading the ISO, create a new VM
     - Typical > Installer disk image file: (find the w11 iso) > deafault > default > finish
-- notes:
+- Notes:
     - when it goes to the windows set up, select product key > Windows 11 Pro > custom
     - choose "Set up device for work or school"
     - for signing in go to sign in options > domain join instead > name: localadmin > security questions > turn off all privacy settings for device
-- once your client machine is all set up, it will be ready to use for Phase 4 and 5.
+- Once your client machine is all set up, it will be ready to use for Phase 4 and 5.
 
 <!--
 Helpful commands
