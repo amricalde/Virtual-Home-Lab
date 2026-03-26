@@ -9,18 +9,18 @@ Three main points for this section:
 
 **Creating admin account** <br>
 Before jumping in to join the client to the domain, a domain admin account is created to manage and configure domain-joined systems. This will be helpful in the next main point(s) of this phase and it is for best practice.
-- on the server, I created an account "ashley.admin" under YYZ > Users
-- under Domain Admins group members, I added ashley.admin
+- On the server, I created an account "ashley.admin" under YYZ > Users
+- Under Domain Admins group members, I added ashley.admin
   ![Domain-admins-a.admin-added](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p4s08.jpg?raw=true)
-- administrator account is then disabled to apply principle of least privilege, which you can also see in the screenshot above (arrow down symbol beside User character).
+- Administrator account is then disabled to apply principle of least privilege, which you can also see in the screenshot above (arrow down symbol beside User character).
   -  AMR.local > Users > right click Administrator > disable
 
 <br>
 
 **Joining Windows Client to domain; troubleshooting**
-- in the client machine, I logged in as a localadmin
-- under Settings > System > About > Domain or workgroup > sign in using ashey.admin credentials > Computer name > Change domain > Member of: AMR.local
-- at first attempt, got an error <mark>"An Active Directory Domain Controller dor the domain "AMR.local" cannot be contacted"</mark>
+- In the client machine, I logged in as a localadmin
+- Under Settings > System > About > Domain or workgroup > sign in using ashey.admin credentials > Computer name > Change domain > Member of: AMR.local
+- At first attempt, got an error <mark>"An Active Directory Domain Controller dor the domain "AMR.local" cannot be contacted"</mark>
   - to check if client and server were communicating, I **pinged the server** from the client machine; they were not communicating
   - used **ipconfig** to check that the client address was configured properly
   - realized errors: not the right configurations.
@@ -28,16 +28,16 @@ Before jumping in to join the client to the domain, a domain admin account is cr
      - IP was not in the same subnet as the server
      - the client VM network adapter was not set to Host-only, the devices were not on the same network.
     <!-- related to next phase: disabled second network adapter nat... needed it to download wallpaper, having nAT really confused the client computer to join domain or properly communicate to it.-->
-- after successful troubleshooting, the client machine is now in the domain and can sign as a user on the domain.
+- After successful troubleshooting, the client machine is now in the domain and can sign as a user on the domain.
   ![domain-join-successful](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p4s01.jpg?raw=true)
 
 <br>
 
 **Re-organizing Active Directory**
-- to ensure efficient control, and security, I did some re-organizing in the Active Directory.
-- now that there is a new computer on the domain, I moved Windows 11 Client from AMR.local > Computers to YYZ > Computers OU
-- created separate OUs for Security Groups and DL Groups, having the appropriate groups in the right OUs
-- deleted Servers OU for now since I do not have any yet. Ran into this error <mark>"You do not have sufficient priviledges to delete Servers, or this object is protected from accidental deletion."</mark>
+- To ensure efficient control, and security, I did some re-organizing in the Active Directory.
+- Now that there is a new computer on the domain, I moved Windows 11 Client from AMR.local > Computers to YYZ > Computers OU
+- Created separate OUs for Security Groups and DL Groups, having the appropriate groups in the right OUs
+- Deleted Servers OU for now since I do not have any yet. Ran into this error <mark>"You do not have sufficient priviledges to delete Servers, or this object is protected from accidental deletion."</mark>
   ![insufficient-privileges](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p4s04.jpg?raw=true)
   - went back to original administrator account and added ashley.admin as a member of the same groups. 
     ![admin-groups](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p4s05.jpg?raw=true)
