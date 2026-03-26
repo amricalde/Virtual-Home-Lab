@@ -14,7 +14,7 @@ Three main points for this section:
 - In the end, it looked something like this:
   ![tools-confirmation](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p2s5.jpg?raw=true)
 
-  After that installing, you are prompted to promote the server as a domain controller
+- When installation is complete, you are prompted to promote the server as a domain controller
   ![notif-dc](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p2s6.jpg?raw=true)
 
 <br>
