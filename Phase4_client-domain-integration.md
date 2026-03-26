@@ -1,6 +1,6 @@
 Phase 4 - Client domain integration
 -
-In Phase 4, the Windows Client was integrated into the Active Directory AMR.local domain. This step enables domain authentication and allows the system to be managed centrally through the Domain Controller.
+In Phase 4, the Windows Client was integrated into the Active Directory AMR.local domain. This enables domain authentication and allows the system to be managed centrally through the Domain Controller.
 
 Three main points for this section:
 - Create admin account ✅
