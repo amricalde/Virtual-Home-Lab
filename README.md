@@ -13,16 +13,20 @@ This project simulates a small enterprise network environment using virtual mach
 
 <br>  
 
+<small>🟢 _**Status: Completed**_ <br></small>
+The project has met its primary objectives. More features and improvements may be added in the future... <br>
+<!--
 <small>🟡 _**Status: Work in progress**_ <br></small>
 This project is currently being built and updated as I progress through the lab... <br>
+-->
 
 **Project Phases:** <br>
 -
-**Phase 1** - Virtual environment setup ✅ <br>
-**Phase 2** - Domain controller deployment ✅ <br>
+**Phase 1** - Virtual environment setup ✅<br>
+**Phase 2** - Domain controller deployment ✅<br>
 **Phase 3** - Active directory structure ✅<br>
 **Phase 4** - Client domain integration ✅<br>
-**Phase 5** - Group policy configuration <br>
+**Phase 5** - Group policy configuration ✅<br>
 
 <br>  
 
