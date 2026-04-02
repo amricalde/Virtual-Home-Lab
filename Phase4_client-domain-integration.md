@@ -34,7 +34,7 @@ Before jumping in to join the client to the domain, a domain admin account is cr
 <br>
 
 **Re-organizing Active Directory**
-- To ensure efficient control, and security, I did some re-organizing in the Active Directory.
+- To ensure efficient control and security, I did some re-organizing in the Active Directory.
 - Now that there is a new computer on the domain, I moved Windows 11 Client from AMR.local > Computers to YYZ > Computers OU
 - Created separate OUs for Security Groups and DL Groups, having the appropriate groups in the right OUs
 - Deleted Servers OU for now since I do not have any yet. Ran into this error <mark>"You do not have sufficient priviledges to delete Servers, or this object is protected from accidental deletion."</mark>
