@@ -49,12 +49,12 @@ Four main points for this section:
 <br>
 
 **Adding objects (users and groups) within the OUs**
-- Within YYZ > Users, I created:
+- Within YYZ (OU) > Users (OU), I created:
     - **Accounting** (Security Group - Global)
     - **Ashley Madison** (User)
     - **IT**; IT_YYZ (Security Group - Global)
     - **DL-ITadmins**; DL-ITadmins_YYZ (Distribution Group - Global)
-- Within LGA > Users, I created:
+- Within LGA (OU) > Users(OU), I created:
     - **Accounting** (Security Group - Global)
     - **Kristi Rodos** (User)
     - **IT**; IT_LGA (Security Group - Global)
@@ -76,7 +76,35 @@ Four main points for this section:
 - When everything is configured, the Active Directory structure currently appears as follows:
   ![completeP3](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p3s09.jpg?raw=true)
 
+<br>
 
+Updated Active Directory structure (as of 04/02/26)
+-
+The structure was updated for better organization and security. Refer to "Re-organizing Active Directory" in Phase 4 for more information.
+
+AMR.local (Domain)
+- LGA (OU)
+  - Computers (OU)
+  - Groups (OU)
+    - DL Groups (OU)
+      - DL-ITadmins_LGA (Distribution Group - Global)
+    - Security Groups (OU)
+      - Accounting_LGA (Security Group - Global)
+      - IT_LGA (Security Group - Global)
+  - Users (OU)
+    - Kristi Rodos (User)
+- YYZ (OU)
+  - Computers (OU)
+    - WINDOWS11CLIENT (Computer)
+  - Groups (OU)
+    - DL Groups (OU)
+      - DL-ITadmins_YYZ (Distribution Group - Global)
+    - Security Groups (OU)
+      - Accounting_YYZ (Security Group - Global)
+      - IT_YYZ (Security Group - Global)
+  - Users (OU)
+    - Ashley Admin (User)
+    - Ashley Madison (User)
 
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------
 Notes as of 03/19/26:
