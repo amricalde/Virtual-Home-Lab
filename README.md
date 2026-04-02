@@ -43,4 +43,7 @@ This project is currently being built and updated as I progress through the lab.
 
 Helpful links:
 <br>https://osintteam.blog/my-virtual-homelab-introduction-caa2f34c73c3
+
+Note as of April 1, 2026:
+- show your updated active directory structure (organized groups, deleted "servers", etc.)
 -->
