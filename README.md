@@ -46,4 +46,5 @@ Helpful links:
 
 Note as of April 1, 2026:
 - show your updated active directory structure (organized groups, deleted "servers", etc.)
+- update screenshots folder?? create subfolders for the diff phases.. idea: create new folders, put photos in, then reapply the same photos on the docs and delete the ones not in the folder once theyre replaced properly)
 -->
