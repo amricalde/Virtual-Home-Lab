@@ -43,7 +43,7 @@ Before jumping in to join the client to the domain, a domain admin account is cr
     ![admin-groups](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p4s05.jpg?raw=true)
   - the step above still didn't work, so I went to View > Advanced Features > Servers OU > Properties > Objects > uncheck "Protect object from accidental deletion" and it worked!
     ![accidental-deletion](https://github.com/amricalde/Virtual-Home-Lab/blob/main/screenshots/p4s09.jpg?raw=true)
-- To see the complete updated active directory structure, refer to phase 3.
+- To see the complete updated active directory structure, refer to the end of Phase 3: "[Updated Active Directory structure (as of 04/02/26)](https://github.com/amricalde/Virtual-Home-Lab/blob/main/Phase3_active-directory-structure.md#updated-active-directory-structure-as-of-040226)"
 
 
 
